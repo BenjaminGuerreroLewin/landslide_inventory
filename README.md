@@ -4,7 +4,7 @@ Workflow to map landslides based on Satellite Imagery and Digital Elevation Mode
 
 The workflow is divided in two steps:
 
-1. pre-process: The JavaScript code runs on the Google Earth Engine platform and outputs a ready-to-analyze set of images. The workflow is as follows:
+1. pre-process: The JavaScript code runs on the Google Earth Engine platform and will output a ready-to-analyze set of images (processes pending). The workflow is as follows:
 - Downloads an Image Collection from the Sentinel 2 satellite, based on an user-provided point of interest.
 - Filters out image features that could complicate landslide analysis (e.g., clouds, clouds shadow, water bodies, etc).
 - Remove pixels that are located at gently sloping areas, based on SRTM Digital Elevation Model (unlikely to represent landslides, but rather changes in agricultural activity, roads and buildings construction, etc.).
