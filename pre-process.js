@@ -1,6 +1,16 @@
+/* 
 
+Javascript pre-processing workflow that runs on Google Earth Engine. 
 
+The following code to generates a set of images corresponding to: 
+(i) The pre-Earthquake image (median of reflectance in the pre-earthquake image dataset)
+(ii) The post-Earthquake image (median of reflectance in the post-earthquake image dataset)
+(iii) Image documenting the change in spectral indices due to the earthquake-induced landslides 
+(iv) Image resulting from the K-Means segmentation algorithm.
 
+The images are exported to Google Drive.
+
+*/
 
 // 'geometry' corresponds to the region of interest (in this case, in the Nepalese Himalayas) and 'geometry2' 
 // corresponds to a subregion on which the K-Means algorithm is trained
