@@ -1,4 +1,4 @@
-# landslide_inventory
+# Landslide Inventory
 Workflow to map landslides based on Satellite Imagery and Digital Elevation Models.
 
 
@@ -14,7 +14,7 @@ The workflow is divided in two steps:
 - Uses the spectral indices of the resulting image from the previous step to generate clusters based on the K-Means algorithm.
 - Exports image segmentation to Google Drive - uncomment code lines below to export other images created in the process.
 
-2. Gorkha Landslides.ipynb: The Jupyter notebook uses the Random Forest algorithm (a supervised Machine Learning algorithm) to determine which categories from the K-Means image (exported in the 'pre-process' code) corresponds to landslides. It requires as inputs the image resulting from the K-Means segmentation and a shapefile of landslides for the same geographical extent. The filepath for both inputs can be set within the code, but it is recommended to be in a unique folder in Google Drive. 
+2. Landslides_RandomForest.ipynb: The Jupyter notebook uses the Random Forest algorithm (a supervised Machine Learning algorithm) to determine which categories from the K-Means image (exported in the 'pre-process' code) corresponds to landslides. It requires as inputs the image resulting from the K-Means segmentation and a shapefile of landslides for the same geographical extent. The filepath for both inputs can be set within the code, but it is recommended to be in a unique folder in Google Drive. 
 
 
 
